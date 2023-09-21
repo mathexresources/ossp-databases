@@ -1,0 +1,18 @@
+-- 21.9.2023 1. assignment
+CREATE DATABASE library CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+
+USE library;
+
+CREATE TABLE books (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    pages INT NOT NULL
+);
+
+CREATE TABLE customers (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    surname VARCHAR(255) NOT NULL,
+    birthdate DATE NOT NULL
+);
