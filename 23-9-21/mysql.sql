@@ -16,3 +16,33 @@ CREATE TABLE customers (
     surname VARCHAR(255) NOT NULL,
     birthdate DATE NOT NULL
 );
+
+INSERT INTO books (
+    name,cauthor,cpages
+) VALUES (
+    'The Lord of the Rings', 'J. R. R. Tolkien', 1178
+    'Harry Potter and the Philosopher''s Stone', 'J. K. Rowling', 223
+    'The Little Prince', 'Antoine de Saint-Exupéry', 96
+    'And Then There Were None', 'Agatha Christie', 272
+    'Dream of the Red Chamber', 'Cao Xueqin', 2500
+    'The Hobbit', 'J. R. R. Tolkien', 310
+    'She: A History of Adventure', 'H. Rider Haggard', 320
+    'The Lion, the Witch and the Wardrobe', 'C. S. Lewis', 206
+    'The Da Vinci Code', 'Dan Brown', 689
+    'The Catcher in the Rye', 'J. D. Salinger', 234
+);
+
+INSERT INTO customers (
+    name, surname, birthdate
+) VALUES (
+    'John', 'Doe', '1990-01-01'
+    'Jane', 'Doe', '1991-01-01'
+    'Jack', 'Doe', '1992-01-01'
+    'Jill', 'Doe', '1993-01-01'
+    'Joe', 'Doe', '1994-01-01'
+    'Jenny', 'Doe', '1995-01-01'
+    'Jerry', 'Doe', '1996-01-01'
+    'Jade', 'Doe', '1997-01-01'
+    'Jade', 'Doe', '1998-01-01'
+    'Jade', 'Doe', '1999-01-01'
+);
