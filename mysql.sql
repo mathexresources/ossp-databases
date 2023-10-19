@@ -17,8 +17,25 @@ CREATE TABLE customers (
     birthdate DATE NOT NULL
 );
 
+CREATE TABLE author (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    surname VARCHAR(255) NOT NULL
+    birthdate DATE NOT NULL
+);
+
+INSERT INTO author (
+    name, surname, birthdate
+) VALUES (
+    'J. R. R.', 'Tolkien', '1892-01-03'
+    'J. K.', 'Rowling', '1965-07-31'
+    'Antoine', 'de Saint-Exupéry', '1900-06-29'
+    'Agatha', 'Christie', '1890-09-15'
+    'Cao', 'Xueqin', '1715-01-01'
+)
+
 INSERT INTO books (
-    name,cauthor,cpages
+    name, author, pages
 ) VALUES (
     'The Lord of the Rings', 'J. R. R. Tolkien', 1178
     'Harry Potter and the Philosopher''s Stone', 'J. K. Rowling', 223
