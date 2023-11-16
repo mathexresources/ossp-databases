@@ -1,3 +1,5 @@
+/*CREATE*/
+
 CREATE DATABASE company;
 
 USE company;
@@ -34,12 +36,18 @@ CREATE TABLE office (
 );
 
 INSERT INTO office (room_number, size) VALUES
-  (101, 20),
-  (102, 25),
-  (103, 30);
+  (101, 200),
+  (102, 5000),
+  (103, 50);
 
 ALTER TABLE cars ADD COLUMN max_speed INT NOT NULL DEFAULT 0;
 
 UPDATE cars SET max_speed = 200 WHERE id = 1;
 UPDATE cars SET max_speed = 180 WHERE id = 2;
 UPDATE cars SET max_speed = 250 WHERE id = 3;
+
+/*ASSIGNMENT 2, SELECT*/
+SELECT name FROM employees;
+SELECT brand, type FROM cars;
+SELECT size FROM office WHERE size BETWEEN 100 AND 10000;
+SELECT surname FROM employees WHERE surname LIKE '%a%';
